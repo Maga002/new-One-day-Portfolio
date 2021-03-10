@@ -1,0 +1,207 @@
+﻿@model HomeVm
+<h2>Section 1</h2>
+<div class="card-body">
+    <h4 class="card-title">Basic Sortable Table</h4>
+    <p class="page-description">Add class</p>
+    <div class="row">
+        <div class="table-sorter-wrapper col-lg-12 table-responsive">
+            <table id="sortable-table-1" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="sortStyle">First Name<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">SubHeader<i class="mdi mdi-chevron-down"></i></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Sect1s.ID</td>
+                        <td>@Model.Sect1s.Name </td>
+                        <td>@Model.Sect1s.SubHeader</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<h2>Section 2</h2>
+<div class="card-body">
+    <h4 class="card-title">Basic Sortable Table</h4>
+    <p class="page-description">Add class</p>
+    <div class="row">
+        <div class="table-sorter-wrapper col-lg-12 table-responsive">
+            <table id="sortable-table-1" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="sortStyle">Name<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">PhotoURL<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">Description 1<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">Description 2<i class="mdi mdi-chevron-down"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Sect2s.ID</td>
+                        <td>@Model.Sect2s.Name </td>
+                        <td>@Model.Sect2s.PhotoURL</td>
+                        <td>@Model.Sect2s.Description1</td>
+                        <td>@Model.Sect2s.Description2</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-5">Section 3</h2>
+<div class="card-body">
+    <h4 class="card-title">Basic Sortable Table</h4>
+    <p class="page-description">Add class</p>
+    <div class="row">
+        <div class="table-sorter-wrapper col-lg-12 table-responsive">
+            <table id="sortable-table-1" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="sortStyle">First Name<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">SubHeader<i class="mdi mdi-chevron-down"></i></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        @foreach (var item in Model.Sect3s)
+                        {
+                            <td>@item.Header</td>
+                            <td>@item.Description </td>
+                        }
+
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-5">Section 4</h2>
+<div class="card-body">
+    <h4 class="card-title">Basic Sortable Table</h4>
+    <p class="page-description">Add class</p>
+    <div class="row">
+        <div class="table-sorter-wrapper col-lg-12 table-responsive">
+            <table id="sortable-table-1" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="sortStyle">First Name<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">SubHeader<i class="mdi mdi-chevron-down"></i></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Sect1s.ID</td>
+                        <td>@Model.Sect1s.Name </td>
+                        <td>@Model.Sect1s.SubHeader</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-5">Section 5</h2>
+<div class="card-body">
+    <h4 class="card-title">Basic Sortable Table</h4>
+    <p class="page-description">Add class</p>
+    <div class="row">
+        <div class="table-sorter-wrapper col-lg-12 table-responsive">
+            <table id="sortable-table-1" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="sortStyle">First Name<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">SubHeader<i class="mdi mdi-chevron-down"></i></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Sect1s.ID</td>
+                        <td>@Model.Sect1s.Name </td>
+                        <td>@Model.Sect1s.SubHeader</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-5">Section 6</h2>
+<div class="card-body">
+    <h4 class="card-title">Basic Sortable Table</h4>
+    <p class="page-description">Add class</p>
+    <div class="row">
+        <div class="table-sorter-wrapper col-lg-12 table-responsive">
+            <table id="sortable-table-1" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="sortStyle">First Name<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">SubHeader<i class="mdi mdi-chevron-down"></i></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Sect1s.ID</td>
+                        <td>@Model.Sect1s.Name </td>
+                        <td>@Model.Sect1s.SubHeader</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-5">Section 7</h2>
+<div class="card-body">
+    <h4 class="card-title">Basic Sortable Table</h4>
+    <p class="page-description">Add class</p>
+    <div class="row">
+        <div class="table-sorter-wrapper col-lg-12 table-responsive">
+            <table id="sortable-table-1" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="sortStyle">First Name<i class="mdi mdi-chevron-down"></i></th>
+                        <th class="sortStyle">SubHeader<i class="mdi mdi-chevron-down"></i></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Sect1s.ID</td>
+                        <td>@Model.Sect1s.Name </td>
+                        <td>@Model.Sect1s.SubHeader</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
